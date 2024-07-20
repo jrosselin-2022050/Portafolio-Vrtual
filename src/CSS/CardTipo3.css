@@ -1,0 +1,84 @@
+.cardTipo3 {
+    --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+    width: 350px;
+    height: auto; /* Ajusta la altura automáticamente */
+    padding: 5px;
+    border-radius: 1rem;
+    overflow: hidden; /* Cambiado a hidden para que el contenido no se desborde */
+    background: #f7ba2b;
+    background: var(--background);
+    position: relative;
+    z-index: 1;
+}
+
+.cardTipo3::after {
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    transform: scale(0.8);
+    filter: blur(25px);
+    background: #f7ba2b;
+    background: var(--background);
+    transition: opacity .5s;
+}
+
+.card-info3 {
+    --color: #181818;
+    background: var(--color);
+    color: #fff; /* Cambia el color del texto a blanco para mayor legibilidad */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Cambiado a hidden para evitar desbordamiento */
+    border-radius: .7rem;
+    padding: 20px;
+}
+
+.card-img3 {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    margin-bottom: 15px; /* Espacio entre la imagen y el contenido */
+}
+
+.title3 {
+    font-weight: bold;
+    letter-spacing: .1em;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.description3 {
+    font-size: 1rem;
+    color: #fff; /* Color blanco para el texto */
+    margin: 1rem 0;
+    text-align: center; /* Centra el texto */
+}
+
+.github-link3 {
+    margin-top: 1rem;
+    color: #f7ba2b;
+    text-decoration: none;
+}
+
+.github-link3:hover {
+    text-decoration: underline;
+}
+
+/* Hover */
+.cardTipo3:hover::after {
+    opacity: 0;
+}
+
+.cardTipo3:hover .card-info3 {
+    color: #f7ba2b;
+    transition: color 1s;
+}

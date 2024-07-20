@@ -1,0 +1,15 @@
+.yo-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+}
+
+.yo-container img {
+    display: block;
+    width: 100px;
+    height: 100px;
+  
+    transition: transform 0.5s ease-out;
+}
+

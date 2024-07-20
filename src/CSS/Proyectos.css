@@ -1,0 +1,180 @@
+/* Proyectos.css */
+
+body {
+    background: rgb(48, 47, 73);
+    background: -moz-linear-gradient(90deg, rgba(48, 47, 73, 1) 13%, rgba(9, 86, 121, 1) 64%, rgba(0, 212, 255, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(48, 47, 73, 1) 13%, rgba(9, 86, 121, 1) 64%, rgba(0, 212, 255, 1) 100%);
+    background: linear-gradient(90deg, rgba(48, 47, 73, 1) 13%, rgba(9, 86, 121, 1) 64%, rgba(0, 212, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#302f49", endColorstr="#00d4ff", GradientType=1);
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.ProyectoDesp {
+    color: black;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.container {
+    background: white;
+    margin: 2.5% auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.ProyectoLista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.ProyectoCard {
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+}
+
+.ProyectoCard:hover {
+    transform: scale(1.05);
+}
+
+.ProyectoImage {
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+}
+
+.ProyectoContent {
+    padding: 20px;
+    text-align: center;
+}
+
+.ProyectoContent h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.ProyectoContent p {
+    font-size: 1em;
+    color: #555;
+}
+
+.GithubButton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.GithubButton:hover {
+    background-color: #555;
+}
+
+/* CardTipo3.css */
+
+.cardTipo3 {
+    --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+    width: 100%;
+    padding: 5px;
+    border-radius: 1rem;
+    overflow: visible;
+    background: #f7ba2b;
+    background: var(--background);
+    position: relative;
+    z-index: 1;
+}
+
+.cardTipo3::after {
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    transform: scale(0.8);
+    filter: blur(25px);
+    background: #f7ba2b;
+    background: var(--background);
+    transition: opacity .5s;
+}
+
+.card-info3 {
+    --color: #181818;
+    background: var(--color);
+    color: var(--color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    border-radius: .7rem;
+    padding: 20px;
+}
+
+.card-img3 {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.title3 {
+    font-weight: bold;
+    letter-spacing: .1em;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.description3 {
+    font-size: 1rem;
+    color: #fff;
+    margin: 1rem 0;
+}
+
+.github-link3 {
+    margin-top: 1rem;
+    color: #f7ba2b;
+    text-decoration: none;
+}
+
+.github-link3:hover {
+    text-decoration: underline;
+}
+
+/* Hover */
+.cardTipo3:hover::after {
+    opacity: 0;
+}
+
+.cardTipo3:hover .card-info3 {
+    color: #f7ba2b;
+    transition: color 1s;
+}
+
+.Skills{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}

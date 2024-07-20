@@ -1,0 +1,100 @@
+/* Importar la fuente Roboto */
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+/* Estilos básicos del cuerpo */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #131417;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fondo para la sección de inicio */
+.FondoInicio {
+  background: radial-gradient(circle, rgba(48, 47, 73, 1) 13%, rgba(9, 86, 121, 1) 64%, rgba(0, 212, 255, 1) 100%);
+  padding-bottom: 40px;
+}
+
+/* Estilos para el párrafo */
+p {
+  text-shadow: 0 0 7px rgba(255, 255, 255, 0.3), 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+/* Estilos para el contenedor de inicio */
+.containerInicio {
+  color: #e5e5e5;
+  font-size: 2.26rem;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  text-align: center;
+  position: relative;
+}
+
+/* Estilos para la animación de texto */
+.animation2 {
+  height: 50px;
+  overflow: hidden;
+  margin-left: 1rem;
+}
+
+.animation2 > div > div {
+  padding: 0.25rem 0.75rem;
+  height: 2.81rem;
+  margin-bottom: 2.81rem;
+  display: inline-block;
+}
+
+.animation2 div:first-child {
+  animation: text-animation 8s infinite;
+}
+
+.first div {
+  background-color: #20a7d8;
+}
+
+.second div {
+  background-color: #CD921E;
+}
+
+.third div {
+  background-color: #c10528;
+}
+
+@keyframes text-animation {
+  0%, 10%, 90%, 100% { margin-top: 0; }
+  20%, 80% { margin-top: -5.62rem; }
+  30%, 70% { margin-top: -5.62rem; }
+  40%, 60% { margin-top: -11.24rem; }
+  50% { margin-top: -11.24rem; }
+}
+
+/* Estilos para el contenedor de la foto de perfil */
+.containerFoto {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-photo {
+  border-radius: 50%;
+  width: 100px; /* Ajusta el tamaño según sea necesario */
+  height: 100px; /* Ajusta el tamaño según sea necesario */
+}
+
+/* Estilos para el contenedor de stacks */
+.containerStacks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para el contenedor de tarjetas */
+.cardContainer {
+  display: flex;
+  gap: 20px;
+}

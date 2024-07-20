@@ -1,0 +1,49 @@
+.card4-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 35px;
+  margin-left: 10px;
+}
+
+.card4 {
+  width: 200px;
+  height: 100px;
+  border-radius: 4px;
+  background: #212121;
+  border: 1px solid #ff5a91;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  transition: all .5s;
+}
+
+.card4-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: rotate(-90deg);
+  transition: all .5s;
+  text-transform: uppercase;
+  color: #ff568e;
+  letter-spacing: .1em;
+}
+
+.card4:hover {
+  width: 300px; /* Increase width when hovered */
+}
+
+.card4:hover .card4-content {
+  transform: rotate(0);
+}
+
+.skill-title {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.skill-percentage {
+  font-size: 1em;
+}
